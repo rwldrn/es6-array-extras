@@ -1,9 +1,11 @@
 # ES6 Array Extras
 
-Correct implementations for Array.of and Array.from. [Original proposal](https://gist.github.com/1074126)
+Correct implementations for `Array.of` and `Array.from`.
+
+See: [Original proposal](https://gist.github.com/1074126)
 
 ## Getting Started
-Install the module with: `npm install es6-array-extras`
+Install the package with: `npm install es6-array-extras`
 
 ## Documentation
 
