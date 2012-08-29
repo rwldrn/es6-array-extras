@@ -13,7 +13,7 @@ Install the package with: `npm install es6-array-extras`
 
 [ES6 Spec (15.4.3.3)](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-15.4.3.3)
 
-Array.of provides a constructor that, unlike Array, does not have the special case for `new Array(42)`, which presets length (and hints to implementations to preallocate) but leaves holes in [0, length ).
+`Array.of` provides a constructor that, unlike `Array`, does not have the special case for `new Array(42)`, which presets length (and hints to implementations to preallocate) but leaves holes in [0, length ).
 
 One of the main goals of ES6 is to become a better language for library writers and code generators.
 
@@ -44,15 +44,14 @@ new Array(10);
 If you replace that by using `Array.of()`, you avoid this "gotcha".
 
 
+Basic usage matches existing `Array` constructor:
+
 ```js
 
-Array.of( 1 );
-
-// [ 1 ]
-
+new Array( 1, 2, 3, 4 );
+// [ 1, 2, 3, 4 ]
 
 Array.of( 1, 2, 3, 4 );
-
 // [ 1, 2, 3, 4 ]
 
 ```
