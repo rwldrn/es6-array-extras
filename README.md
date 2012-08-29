@@ -39,9 +39,17 @@ The result of `o` will be an array with 10 empty indexes, as if it were called l
 
 ```js
 new Array(10);
+// [ , , , , , , , , , , ]
 ```
 
-If you replace that by using `Array.of()`, you avoid this "gotcha".
+If you replace that by using `Array.of()`, you avoid this "gotcha":
+
+```js
+Array.of(10);
+// [ 10 ]
+```
+
+
 
 
 Basic usage matches existing `Array` constructor:
