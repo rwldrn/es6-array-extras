@@ -94,23 +94,13 @@ Array.from( divs ).reduce(function( prev, current ) {
 Array.from( divs[0].classList )
 // ["some", "classes"]
 
-
-// Now shorter then [].foo.call :)
-var a = Array;
-
-
-a.from( divs );
-// [ <div class=​"some classes" data-info=​"12">​</div>​, <div data-info=​"10">​</div>​ ]
-
 ```
 
 
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
-
-## Release History
-_(Nothing yet)_
+All contributions must adhere to the [Idiomatic.js Style Guide](https://github.com/rwldrn/idiomatic.js),
+by maintaining the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
 
 ## License
 Copyright (c) 2012 Rick Waldron
